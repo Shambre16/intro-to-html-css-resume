@@ -1,5 +1,6 @@
 body, h1 {
   margin: 0;
+  text-align: center;
 }
 
 ul {
@@ -15,16 +16,20 @@ ul {
 }
 
 .hero.header {
-  background-image: url("prototypeAssets/background1.png");
+  background-image: url("../../prototype/assets/background1.png");
   background-position: center;
   background-size: cover;
+}
+
+.unity {
+  margin: auto;
 }
 
 .menu li {
   display: inline;
 }
 
-.sidebar {
+.social-networking sidebar {
   transform: rotate(-90deg);
 }
 
@@ -33,29 +38,38 @@ ul {
 }
 
 .hero.section-1 {
+  background-image: url("../../prototype/assets/assets_0001s_0006_Rectangle-2.png");
   background-position: center;
   background-size: cover;
 }
 
 .hero.section-2 {
+  background-image: url("../../prototype/assets/WeAreUnity.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero.section-3 {
-  background-color: yellow;
+  background-image: url("../../prototype/assets/assets_0005s_0001s_0000s_0004_Rectangle-4-copy-6.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero.section-4 {
-  background-color: green;
+  background-image: url("../../prototype/assets/assets_0005s_0002s_0000_Layer-18.png");
+  background-position: center;
+  background-size: cover;
+
 }
 
 .hero.section-5 {
-  background-color: blue;
-}
-
-.hero.section-6 {
-  background-color: ;
+  background-image: url("../../prototype/assets/assets_0008s_0008_Rectangle-41.png");
+  background-position: center;
+  background-size: cover;
 }
 
 footer {
-  background-image: url("prototypeAssets/smallblackrectangle.png");
+  background-image: url("../../prototype/assets/assets_0006s_0001_Rectangle-14-copy.png");
+  background-position: center;
+  background-size: cover;
 }
