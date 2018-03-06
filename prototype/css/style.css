@@ -1,0 +1,61 @@
+body, h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+  z-index: 0;
+}
+
+.hero.header {
+  background-image: url("prototypeAssets/background1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.menu li {
+  display: inline;
+}
+
+.sidebar {
+  transform: rotate(-90deg);
+}
+
+.sidebar li {
+  display: inline;
+}
+
+.hero.section-1 {
+  background-position: center;
+  background-size: cover;
+}
+
+.hero.section-2 {
+}
+
+.hero.section-3 {
+  background-color: yellow;
+}
+
+.hero.section-4 {
+  background-color: green;
+}
+
+.hero.section-5 {
+  background-color: blue;
+}
+
+.hero.section-6 {
+  background-color: ;
+}
+
+footer {
+  background-image: url("prototypeAssets/smallblackrectangle.png");
+}
