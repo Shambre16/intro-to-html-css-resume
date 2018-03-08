@@ -1,46 +1,217 @@
-body, h1 {
+body, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
   text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Abraham Lincoln';
+  src: url('../fonts/abrahamlincoln-webfont.woff2') format('woff2'),
+  url('../fonts/abrahamlincoln-webfont.woff') format('woff');
+
 }
 
-ul {
+h1 {
+  font-size: 73.39px;
+}
+
+h2 {
+  font-size: 100px;
+  text-transform: capitalize;
+}
+
+h3 {
+ font-size: 70px;
+}
+
+
+h4 {
+  color: black;
+  font-size: 30px;
+}
+
+h5 {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 24pt;
+}
+
+
+h6{
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
+.black {
+  color: Black;
+}
+
+
+.three-columns.poppins {
+  position: absolute;
+  padding: 10px;
+  display: inline;
+  width: 800px;
+}
+
+
+.columns {
+  display: inline-block;
+  width: 20%;
+  margin: 50px;
+}
+
+.horizontal-block {
+  position: relative;
+  padding: 0px;
+  display: inline;
+  width: 800px;
+  margin: 25px;
+}
+
+.horizontal-block.columns {
+  display: inline-block;
+  width: 20%;
+  margin: 0 200px;
+}
+
+li {
   list-style-type: none;
 }
+
 
 .hero {
   height: 100vh;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  z-index: 0;
 }
 
 .hero.header {
   background-image: url("../../prototype/assets/background1.png");
   background-position: center;
   background-size: cover;
+  position: relative;
+  height: 170vh;
 }
 
-.unity {
-  margin: auto;
+.unity-border {
+  padding-top: 40px;
+  position: relative;
 }
+
+.unity-logo {
+  color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  width: fit-content;
+  margin: auto;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Gotham Black';
+  src: url('../fonts/GothamBlack.woff2') format('woff2'),
+      url('../fonts/GothamBlack.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.unity-block li {
+  margin: 50px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  position: relative;
+}
+
+
+.unity-block {
+  padding-top: 50px;
+  position: relative;
+}
+
 
 .menu li {
   display: inline;
 }
 
-.social-networking sidebar {
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.social-networking {
+  position: relative;
+  margin: 850px 40%;
   transform: rotate(-90deg);
+  float: right;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline;
+  color: white;
+  text-decoration: none;
+  word-spacing: 15px;
 }
 
 .sidebar li {
   display: inline;
 }
 
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.honor-block {
+  position: relative;
+  float: none;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px;
+  text-align: center;
+  width: fit-content;
+  display: inline;
+  color: black;
+}
+
+
+.yellow {
+  color: rgb(255, 168, 0);
+  font-family: 'Abraham Lincoln';
+  src: url('../fonts/abrahamlincoln-webfont.woff2') format('woff2'),
+  url('../fonts/abrahamlincoln-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.honor-block.yellow-text.medium {
+  font-size: 73.39px;
+}
+
 .hero.section-1 {
   background-image: url("../../prototype/assets/assets_0001s_0006_Rectangle-2.png");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .hero.section-2 {
@@ -59,7 +230,6 @@ ul {
   background-image: url("../../prototype/assets/assets_0005s_0002s_0000_Layer-18.png");
   background-position: center;
   background-size: cover;
-
 }
 
 .hero.section-5 {
@@ -68,8 +238,13 @@ ul {
   background-size: cover;
 }
 
-footer {
+
+.hero.footer {
   background-image: url("../../prototype/assets/assets_0006s_0001_Rectangle-14-copy.png");
   background-position: center;
   background-size: cover;
+}
+
+.logo-container.roboto {
+  display: inline-block;
 }
