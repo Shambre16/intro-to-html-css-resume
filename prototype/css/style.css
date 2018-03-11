@@ -1,13 +1,19 @@
-body, h1, h2, h3, h4, h5, h6 {
+* {
+  font-family: 'Abraham Lincoln';
   margin: 0;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-family: 'Abraham Lincoln';
-  src: url('../fonts/abrahamlincoln-webfont.woff2') format('woff2'),
-  url('../fonts/abrahamlincoln-webfont.woff') format('woff');
+}
 
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 h1 {
@@ -86,9 +92,7 @@ h6{
   margin: 0 200px;
 }
 
-li {
-  list-style-type: none;
-}
+
 
 
 .hero {
@@ -96,9 +100,11 @@ li {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
-.hero.header {
+
+.hero.section-1 {
   background-image: url("../../prototype/assets/background1.png");
   background-position: center;
   background-size: cover;
@@ -106,50 +112,29 @@ li {
   height: 170vh;
 }
 
-.unity-border {
-  padding-top: 40px;
-  position: relative;
+.header {
+  width: 600px;
+  margin: 120px auto 0;
 }
 
-.unity-logo {
-  color: white;
-  border: 1px;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+.header h1 {
+  padding: 10px;
+  border: 1px solid white;
   width: fit-content;
   margin: auto;
-  text-transform: uppercase;
-  position: relative;
   font-family: 'Gotham Black';
-  src: url('../fonts/GothamBlack.woff2') format('woff2'),
-      url('../fonts/GothamBlack.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-.unity-block li {
-  margin: 50px;
-  padding-top: 20px;
-  text-transform: uppercase;
-  word-spacing: 5px;
-  position: relative;
-}
-
-
-.unity-block {
-  padding-top: 50px;
-  position: relative;
-}
 
 
 .menu li {
+  margin: 10px;
   display: inline;
+  padding-top: 30px;
 }
+
 
 .menu li a {
   text-decoration: none;
@@ -159,13 +144,12 @@ li {
 
 .social-networking {
   position: relative;
-  margin: 850px 40%;
+  margin: 1000px 20%;
   transform: rotate(-90deg);
   float: right;
   text-transform: uppercase;
   margin: 0;
   display: inline;
-  color: white;
   text-decoration: none;
   word-spacing: 15px;
 }
@@ -181,58 +165,55 @@ li {
 
 
 .honor-block {
-  position: relative;
-  float: none;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 100px;
-  text-align: center;
-  width: fit-content;
-  display: inline;
+
   color: black;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 10%;
 }
 
 
 .yellow {
   color: rgb(255, 168, 0);
   font-family: 'Abraham Lincoln';
-  src: url('../fonts/abrahamlincoln-webfont.woff2') format('woff2'),
-  url('../fonts/abrahamlincoln-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
 }
 
-.honor-block.yellow-text.medium {
+.honor-block.yellow.medium {
   font-size: 73.39px;
+  letter-spacing: -0.05em;
 }
 
-.hero.section-1 {
+.hero.section-2 {
   background-image: url("../../prototype/assets/assets_0001s_0006_Rectangle-2.png");
   background-position: center;
   background-size: cover;
   position: relative;
+  height: auto;
 }
 
-.hero.section-2 {
+.hero.section-3 {
   background-image: url("../../prototype/assets/WeAreUnity.png");
   background-position: center;
   background-size: cover;
 }
 
-.hero.section-3 {
+.hero.section-4 {
   background-image: url("../../prototype/assets/assets_0005s_0001s_0000s_0004_Rectangle-4-copy-6.png");
   background-position: center;
   background-size: cover;
 }
 
-.hero.section-4 {
+.hero.section-5 {
   background-image: url("../../prototype/assets/assets_0005s_0002s_0000_Layer-18.png");
   background-position: center;
   background-size: cover;
 }
 
-.hero.section-5 {
+.hero.section-6 {
   background-image: url("../../prototype/assets/assets_0008s_0008_Rectangle-41.png");
   background-position: center;
   background-size: cover;
@@ -243,8 +224,19 @@ li {
   background-image: url("../../prototype/assets/assets_0006s_0001_Rectangle-14-copy.png");
   background-position: center;
   background-size: cover;
+  height: auto;
 }
 
 .logo-container.roboto {
-  display: inline-block;
+  display: inline;
+}
+
+
+.testimonial-container.columns {
+  display: inline;
+  margin: auto;
+}
+
+.columns.white {
+  border: 1px solid white;
 }
