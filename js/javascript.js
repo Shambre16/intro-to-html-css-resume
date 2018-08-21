@@ -1,5 +1,5 @@
 //Book object constructor
-var Book = function(args) {
+var Book = function (args) {
   this.title = args.title;
   this.author = args.author;
   this.numberOfPages = args.numPages;
@@ -13,7 +13,7 @@ var Library = function(instanceKey) {
 };
 
 //Library Instance:
-var gLib = new Library("localLibraryStorage");
+var gLib = new Library();
 
 
 Library.prototype.addBook = function(book) {
@@ -22,11 +22,11 @@ Library.prototype.addBook = function(book) {
   }
   for (var i = 0; i < this.myBooksArray.length; i++) {
     var currentBook = this.myBooksArray[i];
-    if (currentBook.title === book.title) {
+    if (this.myBooksArray[i].title === book.title) {
       return false;
     }
   }
-  this.myBooksArray.push(book)
+  this.myBooksArray.push(book);
   return true;
 };
 
